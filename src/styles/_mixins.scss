@@ -1,0 +1,60 @@
+@mixin icon($image, $color) {
+    background-color: $white;
+    background-image: url($image);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: $color;
+    box-shadow: inset 0px 5px 6px grey, 0px 5px darken($color, 15%);
+}
+
+@mixin bigShadow($color) {
+    box-shadow: inset 0px 5px 6px grey, 0px 8px darken($color, 15%), 0px 0px 0px 50px rgba(#ffffff, 0.07),
+        0px 0px 0px 100px rgba(#ffffff, 0.05), 0px 0px 0px 150px rgba(#ffffff, 0.025);
+}
+
+@mixin scissors($x, $y) {
+    @include icon($imageS, $scissors-gradient);
+    transform: translateX($x) translateY($y);
+    &:hover {
+        transform: translateX($x) translateY($y) scale(1.1);
+    }
+}
+
+@mixin spock($x, $y) {
+    @include icon($imageSp, $spock-gradient);
+    transform: translateX($x) translateY($y);
+    &:hover {
+        transform: translateX($x) translateY($y) scale(1.1);
+    }
+}
+
+@mixin paper($x, $y) {
+    @include icon($imageP, $paper-gradient);
+    transform: translateX($x) translateY($y);
+    &:hover {
+        transform: translateX($x) translateY($y) scale(1.1);
+    }
+}
+
+@mixin lizard($x, $y) {
+    @include icon($imageL, $lizard-gradient);
+    transform: translateX($x) translateY($y);
+    &:hover {
+        transform: translateX($x) translateY($y) scale(1.1);
+    }
+}
+
+@mixin rock($x, $y) {
+    @include icon($imageR, $rock-gradient);
+    transform: translateX($x) translateY($y);
+    &:hover {
+        transform: translateX($x) translateY($y) scale(1.1);
+    }
+}
+
+@mixin gameText($font-size, $font-weight, $margin-bottom) {
+    text-transform: uppercase;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    margin-bottom: $margin-bottom;
+}

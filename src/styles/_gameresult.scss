@@ -1,0 +1,34 @@
+.game__play {
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    margin: 0 2rem;
+    .text {
+        @include gameText(3rem, 700, 10px);
+    }
+    .play-again {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .game__play {
+        order: 3;
+        flex-grow: 1;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}

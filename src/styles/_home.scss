@@ -1,0 +1,71 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-top: 3.125rem;
+    min-height: 400px;
+    .pentagon {
+        position: absolute;
+        align-self: center;
+        margin-top: 4.375rem;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        .icon {
+            height: 120px;
+            width: 120px;
+            border: 12px solid;
+            border-radius: 50%;
+            transition: transform 0.2s;
+            &--scissors {
+                @include scissors(15rem, 0rem);
+            }
+            &--spock {
+                @include spock(-2rem, 8rem);
+            }
+            &--paper {
+                @include paper(10rem, 8rem);
+            }
+            &--lizard {
+                @include lizard(-15rem, 18rem);
+            }
+            &--rock {
+                @include rock(-8rem, 18rem);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home {
+        margin-top: 1rem;
+        min-height: 360px;
+        .pentagon {
+            width: 80%;
+        }
+        .items {
+            .icon {
+                height: 100px;
+                width: 100px;
+                background-size: 50%;
+                &--scissors {
+                    @include scissors(12rem, 1rem);
+                }
+                &--spock {
+                    @include spock(0rem, 8rem);
+                }
+                &--paper {
+                    @include paper(6rem, 8rem);
+                }
+                &--lizard {
+                    @include lizard(-11rem, 16rem);
+                }
+                &--rock {
+                    @include rock(-7rem, 16rem);
+                }
+            }
+        }
+    }
+}
