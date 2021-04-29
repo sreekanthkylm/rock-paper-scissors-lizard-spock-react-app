@@ -43,8 +43,13 @@ to download the required node modules in your downloaded folder. Then start the 
 #### Screenshots
 
 ![desktop-rules-modal-bonus](https://user-images.githubusercontent.com/18134459/116509851-98d2ec80-a8e1-11eb-8ec0-83ae66547e5e.jpg)
+
 ![desktop-step-1-bonus](https://user-images.githubusercontent.com/18134459/116509854-9a041980-a8e1-11eb-8dce-1b2312a7f122.jpg)
+
 ![desktop-step-4-bonus](https://user-images.githubusercontent.com/18134459/116509855-9a9cb000-a8e1-11eb-94d4-5be4149f097a.jpg)
+#### Screenshots-Mobile
 ![mobile-rules-modal-bonus](https://user-images.githubusercontent.com/18134459/116509856-9b354680-a8e1-11eb-9355-97008d452967.jpg)
+
 ![mobile-step-1-bonus](https://user-images.githubusercontent.com/18134459/116509857-9b354680-a8e1-11eb-9fc8-54bcb3371d71.jpg)
+
 ![mobile-step-4-bonus](https://user-images.githubusercontent.com/18134459/116509858-9bcddd00-a8e1-11eb-8b08-12a97b12673b.jpg)
